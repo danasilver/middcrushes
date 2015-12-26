@@ -1,0 +1,4 @@
+-r common.txt
+
+# http://django-debug-toolbar.readthedocs.org/en/1.4/
+django-debug-toolbar==1.4

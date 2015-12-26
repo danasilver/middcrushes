@@ -1,0 +1,11 @@
+Django==1.9
+
+# Registration flow
+django-registration==2.0.3
+
+# PostgreSQL driver
+psycopg2==2.6.1
+
+# Asset packaging
+# https://django-pipeline.readthedocs.org
+django-pipeline==1.6.0

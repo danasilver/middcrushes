@@ -1,0 +1,9 @@
+Welcome to MiddCrushes!
+
+Follow this link to verify you're a Middlebury student and activate your account:
+
+{{ site.}}{{ activation_key }}
+
+Love,
+
+MiddCrushes
