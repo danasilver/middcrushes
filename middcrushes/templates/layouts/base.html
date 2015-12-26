@@ -1,12 +1,16 @@
+{% load pipeline %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>MiddCrushes</title>
+    {% stylesheet 'libs' %}
   </head>
   <body>
     {% include "partials/header.html" %}
     {% block body %}
     {% endblock %}
     {% include "partials/footer.html" %}
+    {% javascript 'libs' %}
   </body>
 </html>

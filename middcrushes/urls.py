@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from crushes import views as crushes_views
 
 urlpatterns = [
-    url(r'^$', 'crushes.views.index', name='index'),
+    url(r'^$', crushes_views.index, name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'^', include('registration.backends.hmac.urls'))
 ]
