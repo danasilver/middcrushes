@@ -1,0 +1,22 @@
+{
+  "name": "middcrushes",
+  "version": "1.0.0",
+  "description": "## Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danasilver/middcrushes.git"
+  },
+  "author": "Dana Silver <dsilver@middlebury.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danasilver/middcrushes/issues"
+  },
+  "homepage": "https://github.com/danasilver/middcrushes#readme",
+  "dependencies": {
+    "less": "^2.5.3"
+  }
+}

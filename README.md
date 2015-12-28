@@ -27,3 +27,11 @@ Run the migrations:
 ```sh
 $ python manage.py migrate
 ```
+
+## Heroku
+
+Use Heroku Buildpack Multi
+
+```sh
+heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git
+```

@@ -1,16 +1,19 @@
+{% load staticfiles %}
 {% load pipeline %}
 
 <!DOCTYPE html>
 <html>
   <head>
     <title>MiddCrushes</title>
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
     {% stylesheet 'libs' %}
+    {% block stylesheets %}{% endblock %}
   </head>
   <body>
     {% include "partials/header.html" %}
-    {% block body %}
-    {% endblock %}
+    {% block body %}{% endblock %}
     {% include "partials/footer.html" %}
     {% javascript 'libs' %}
+    {% block javascripts %}{% endblock %}
   </body>
 </html>

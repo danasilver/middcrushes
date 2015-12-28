@@ -1,0 +1,82 @@
+.splash-container {
+  @media (min-width: 992px) {
+    height: 500px;
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+  @media (max-width: 991px) {
+    height: 300px;
+  }
+  @media (min-width: 992px) {
+    height: 500px;
+  }
+}
+
+.title {
+  font-weight: 300;
+  @media (max-width: 991px) {
+    font-size: 50px;
+    text-align: center;
+    margin: 80px 0 0 0;
+  }
+  @media (min-width: 992px) {
+    font-size: 75px;
+    text-align: center;
+    margin: 140px 0 0 0;
+  }
+  .midd {
+    color: #3376b1;
+  }
+  .courses {
+    color: #333;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0 1px 1px #333;
+  @media (max-width: 991px) {
+    font-size: 20px;
+    text-align: center;
+  }
+  @media (min-width: 992px) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.signup-form {
+  input:not([type='checkbox']) {
+    height: 40px;
+  }
+  label.control-label {
+    padding-top: 10px !important;
+  }
+  .help-block {
+    margin-bottom: 0;
+  }
+  @media (max-width: 991px) {
+    margin-top: 250px;
+    &.has-message {
+      margin-top: 120px;
+    }
+    input[type='submit'] {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 120px;
+  }
+}
+
+.messages-mobile {
+  margin-top: 120px;
+  margin-bottom: -120px;
+}

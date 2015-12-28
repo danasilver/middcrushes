@@ -1,7 +1,25 @@
 {% extends "layouts/base.html" %}
+{% load pipeline %}
+
+{% block stylesheets %}
+{% stylesheet 'index' %}
+{% endblock %}
+
+{% block javascripts %}
+{% javascript 'index' %}
+{% endblock %}
 
 {% block body %}
-<div class="container">
-  {% include "registration/registration_form.html" %}
+<canvas id="background"></canvas>
+<div class="container splash-container">
+  <div class="row splash">
+    <div class="col-md-6">
+      <h1 class="title">MiddCrushes</h1>
+      <h2 class="subtitle">We found love in a hopeless place.</h2>
+    </div>
+    <div class="col-md-6">
+      {% include "registration/registration_form.html" %}
+    </div>
+  </div>
 </div>
 {% endblock %}
