@@ -1,0 +1,32 @@
+.form-control,
+.btn {
+  border-radius: 0px;
+}
+
+.form-control {
+  border-width: 2px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #4387fd;
+}
+
+.btn-primary {
+  background-color: #4387fd;
+  &:hover {
+    background-color: darken(#4387fd, 10%);
+  }
+  &:active,
+  &:focus,
+  &:active:focus {
+    background-color: darken(#4387fd, 20%);
+  }
+}
+
+.navbar-btn {
+  color: #333;
+  &:hover, &:active, &:focus {
+    color: #333;
+  }
+}

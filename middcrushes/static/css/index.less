@@ -1,39 +1,19 @@
-.splash-container {
-  @media (min-width: 992px) {
-    height: 500px;
-  }
-}
-
 canvas {
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 50px;
   z-index: -1000;
-  @media (max-width: 991px) {
-    height: 300px;
-  }
-  @media (min-width: 992px) {
-    height: 500px;
-  }
 }
 
 .title {
   font-weight: 300;
+  text-align: center;
   @media (max-width: 991px) {
     font-size: 50px;
-    text-align: center;
-    margin: 80px 0 0 0;
+    margin: 30px 0 0 0;
   }
   @media (min-width: 992px) {
     font-size: 75px;
-    text-align: center;
-    margin: 140px 0 0 0;
-  }
-  .midd {
-    color: #3376b1;
-  }
-  .courses {
-    color: #333;
+    margin: 50px 0 0 0;
   }
 }
 
@@ -52,18 +32,24 @@ canvas {
   }
 }
 
+.description {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .signup-form {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   input:not([type='checkbox']) {
     height: 40px;
-  }
-  label.control-label {
-    padding-top: 10px !important;
   }
   .help-block {
     margin-bottom: 0;
   }
   @media (max-width: 991px) {
-    margin-top: 250px;
     &.has-message {
       margin-top: 120px;
     }
@@ -71,8 +57,8 @@ canvas {
       width: 100%;
     }
   }
-  @media (min-width: 992px) {
-    margin-top: 120px;
+  .btn {
+    width: 100%;
   }
 }
 

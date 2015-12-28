@@ -10,7 +10,7 @@ PIPELINE = {
         'libs': {
             'source_filenames': (
                 'vendor/bootstrap/css/bootstrap.css',
-                'css/bootstrap-theme.css'
+                'css/bootstrap-theme.less'
             ),
             'output_filename': 'css/libs.css'
         },

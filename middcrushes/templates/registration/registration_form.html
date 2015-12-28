@@ -13,36 +13,45 @@
   {% endif %}
 
   <div class="form-group">
-    <label for="id_email" class="col-md-4 control-label">Midd Email</label>
-    <div class="col-md-8">
-      <input type="email" name="email" class="form-control" id="id_email"
-       value="{% if form.email.value %}{{form.email.value}}{% endif %}">
+    <div class="col-sm-12">
+      <label for="id_email">Your Midd Email</label>
     </div>
+    <div class="col-sm-12">
+      <input type="email" name="email" class="form-control" id="id_email" tabindex="1"
+       value="{% if form.email.value %}{{form.email.value}}{% endif %}">
+     </div>
     {% if form.email.errors %}
-    <div class="col-md-offset-4 col-md-8 help-block">{% for error in form.email.errors %}{{ error }}&nbsp;{% endfor %}</div>
+    <div class="help-block">{% for error in form.email.errors %}{{ error }}&nbsp;{% endfor %}</div>
     {% endif %}
   </div>
   <div class="form-group">
-    <label for="id_password1" class="col-md-4 control-label">Create a password</label>
-    <div class="col-md-8">
-      <input type="password" name="password1" autocomplete="off" class="form-control" id="id_password1" value="">
+    <div class="col-sm-12">
+      <label for="id_password1">Create a password</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="password" name="password1" autocomplete="off" tabindex="2"
+      class="form-control" id="id_password1" value="">
     </div>
     {% if form.password1.errors %}
-    <div class="col-md-offset-4 col-md-8 help-block">{% for error in form.password1.errors %}{{ error }}&nbsp;{% endfor %}</div>
+    <div class="help-block">{% for error in form.password1.errors %}{{ error }}&nbsp;{% endfor %}</div>
     {% endif %}
   </div>
   <div class="form-group">
-    <label for="id_password2" class="col-md-4 control-label">Password (again)</label>
-    <div class="col-md-8">
-      <input type="password" name="password2" autocomplete="off" class="form-control" id="id_password2" value="">
+    <div class="col-sm-12">
+      <label for="id_password2">Password (again)</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="password" name="password2" autocomplete="off" tabindex="3"
+      class="form-control" id="id_password2" value="">
     </div>
     {% if form.password2.errors %}
-    <div class="col-md-offset-4 col-md-8 help-block">{% for error in form.password2.errors %}{{ error }}&nbsp;{% endfor %}</div>
+    <div class="help-block">{% for error in form.password2.errors %}{{ error }}&nbsp;{% endfor %}</div>
     {% endif %}
   </div>
-  <div class="form-group">
-    <div class="col-md-3 col-md-offset-4">
-      <input class="btn btn-primary" type="submit" value="Create Account">
+  <div class="row">
+    <div class="col-sm-12">
+      <input class="btn btn-primary" type="submit" tabindex="4"
+       value="Start Crushing">
     </div>
   </div>
 </form>

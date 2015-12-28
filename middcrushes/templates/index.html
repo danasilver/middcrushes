@@ -11,13 +11,19 @@
 
 {% block body %}
 <canvas id="background"></canvas>
-<div class="container splash-container">
-  <div class="row splash">
-    <div class="col-md-6">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
       <h1 class="title">MiddCrushes</h1>
       <h2 class="subtitle">We found love in a hopeless place.</h2>
+      <div class="description">
+        <h4>We know you've been crushing hard.</h4>
+        <h4>Find out if someone is crushing on you.</h4>
+      </div>
     </div>
-    <div class="col-md-6">
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
       {% include "registration/registration_form.html" %}
     </div>
   </div>
